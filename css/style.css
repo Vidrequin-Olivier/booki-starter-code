@@ -144,7 +144,7 @@ header button:hover {
 .filters i {
     width: 22px;
     margin-right: 10px;
-    background-color: white;
+    background: none;
 }
 
 .filter-bar-container {
@@ -185,6 +185,10 @@ header button:hover {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.filter:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .info-bar {
@@ -252,6 +256,35 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.cards-container {
+    margin-top: 30px;
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hebergements a {
+    width: 100%;
+    max-width: 31%;
+}
+
+.hebergements img {
+    width: 100%;
+    height: 114px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements .card-content {
+    padding: 4px 15px 15px 15px;
+}
+
+.show-more {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -335,6 +368,13 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1290px), (max-width: 873px) {
+    .hebergements a {
+        width: 100%;
+        max-width: 47%;
     }
 }
 
