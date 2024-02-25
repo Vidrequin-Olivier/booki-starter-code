@@ -245,6 +245,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -254,7 +255,7 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
 }
 
@@ -266,18 +267,18 @@ a {
     flex-wrap: wrap;
 }
 
-.hebergements a {
+#hebergements a {
     width: 100%;
     max-width: 31%;
 }
 
-.hebergements img {
+#hebergements img {
     width: 100%;
     height: 114px;
     border-radius: 20px 20px 0 0;
 }
 
-.hebergements .card-content {
+#hebergements .card-content {
     padding: 4px 15px 15px 15px;
 }
 
@@ -288,7 +289,7 @@ a {
 }
 
 /****** Populaires ***********/
-.populaires {
+#populaires {
     width: 32%;
 }
 
@@ -331,8 +332,41 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activites ***********/
+#activites {
+    padding: 30px;
+}
 
+#activites h2 {
+    margin-bottom: 30px;
+}
 
+.activites-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-container a {
+    width: 100%;
+    max-width: 23%;
+}
+
+.activites-container .card {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.activites-container img {
+    width: 100%;
+    height: 26vw;
+    max-height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-container h3 {
+    margin: 20px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -343,11 +377,11 @@ a {
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergements {
         width: 100%;
     }
 
-    .populaires {
+    #populaires {
         width: 100%;
         margin-top: 50px;
     }
@@ -372,9 +406,19 @@ a {
 }
 
 @media (min-width: 1025px) and (max-width: 1290px), (max-width: 873px) {
-    .hebergements a {
+    #hebergements a {
         width: 100%;
         max-width: 47%;
+    }
+
+    .populaires-cards .card {
+        flex-direction: column;
+    }
+
+    .populaires-cards img {
+        width: 100%;
+        height: 114px;
+        border-radius: 20px 20px 0 0;
     }
 }
 
