@@ -216,6 +216,10 @@ h1 {
     font-size: 22px;
 }
 
+h2 {
+    font-size: 16px;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -368,7 +372,6 @@ h1 {
 
 .activites-container h2 {
     margin: 20px;
-    font-size: 16px;
 }
 
 /****** Footer ***********/
@@ -411,10 +414,6 @@ footer li {
 
     .hebergements-and-populaires {
         flex-direction: column;
-    }
-
-    .hebergements-and-populaires h2 {
-        font-size: 14px;
     }
 
     #hebergements {
