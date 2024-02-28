@@ -134,6 +134,7 @@ header p:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .filters p {
@@ -458,8 +459,8 @@ footer li {
     }
 }
 
-/* Small devices (phones, less than 786px) */
-@media (max-width: 785px) {
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
 
     .filter-bar-container {
         width: clamp(1px, 100%, 350px);
